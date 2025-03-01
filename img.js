@@ -17,3 +17,14 @@ function run3(){
     let img2=document.querySelector(`.div2`);
     img2.style.backgroundImage="url(https://www.portotheme.com/wordpress/porto/shop46/wp-content/uploads/sites/225/2023/09/porto46-product14-2-600x600.jpg)"
 }
+
+function inter(){
+    let img1=document.querySelector(`.img2`);
+    img1.style.scale="-1";
+    img1.style.transition="scale 1s";
+}
+function out(){
+    let img1=document.querySelector(`.img2`);
+    img1.style.scale="1";
+    img1.style.transition="scale 1s";
+}

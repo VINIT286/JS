@@ -11,6 +11,7 @@
 }
 
 .div2{
+    display: block;
     width:200px;
     height:200px;
     overflow:hidden;
@@ -20,3 +21,15 @@
     background-image: url(https://www.portotheme.com/wordpress/porto/shop46/wp-content/uploads/sites/225/2023/09/porto46-product14-2-600x600.jpg);
 }
 
+.div3{
+    display: block;
+    width:200px;
+    height:200px;
+    overflow:hidden;
+    border-radius:50%;
+}
+.div3 img{
+    width:200px;
+    height:200px;
+    
+}
