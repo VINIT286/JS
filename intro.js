@@ -17,3 +17,5 @@
 // best way is tho use javascript in the last of html code above closing body tag.
 
 // official name of Javascript is ECMA Script(European Computer Manufacturing Association)
+
+//
