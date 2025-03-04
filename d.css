@@ -1,0 +1,29 @@
+.s1{
+    display: flex;
+}
+
+.s1.a1 div {
+    width: 150px;
+    height: 150px;
+    margin: 6px;
+    border-radius: 15px;
+}
+.s1 .a1 div img{
+    width:150px;
+    height: 150px;
+    border-radius: 15px;
+
+}
+.s1 .a2  div{
+    width:650px;
+    height: 650px;
+    margin: 6px;
+    border-radius: 15px;
+
+}
+.s1 .a2 div img{
+    width:650px;
+    height: 650px;
+    border-radius: 15px;
+
+}
