@@ -9,7 +9,7 @@ const ch =(n)=>{
 
      }
 
-     else if(n==3){/
+     else if(n==3){
         let big = document.querySelector('#big');
         big.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJWW3Lc3DAUA_eMHN-J8cLj0fNcZlb27hbXg&s"
 
