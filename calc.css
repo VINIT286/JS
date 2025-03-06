@@ -1,5 +1,8 @@
 .a{
     background-color: blue;
+    font-size: large;
+    font-weight:bolder;
+    border-color: white;
 }
 .table{
     background-color: rgba(0, 0, 0, 0.69);
@@ -24,5 +27,6 @@
     text-align: center;
     background-color: aliceblue;
 }
+
 
 
