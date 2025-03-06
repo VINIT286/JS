@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./calc.css">
+</head>
+<body class="a">
+    <table align="center" cellpadding="20px" cellspacing="20px" border="2px" class="table">
+        <tr>
+            <td colspan="4" class="display"></td>
+        </tr>
+        <tr id="row1">
+            <td onclick="back()" id="col">C</td>
+            <td onclick="cal('%')" id="col">%</td>
+            <td onclick="cl()" id="col">CL</td>
+            <td onclick="cal('/')" id="col">/</td>
+        </tr>
+          <tr id="row1">
+            <td onclick="cal('7')" id="col1">7</td>
+            <td onclick="cal('8')" id="col1">8</td>
+            <td onclick="cal('9')" id="col1">9</td>
+            <td onclick="cal('*')" id="col">*</td>
+        </tr>
+        <tr id="row1">
+            <td onclick="cal('4')" id="col1">4</td>
+            <td onclick="cal('5')" id="col1">5</td>
+            <td onclick="cal('6')" id="col1">6</td>
+            <td onclick="cal('-')" id="col">-</td>
+        </tr>
+        <tr id="row1">
+            <td onclick="cal('1')" id="col1">1</td>
+            <td onclick="cal('2')" id="col1">2</td>
+            <td onclick="cal('3')" id="col1">3</td>
+            <td onclick="cal('+')" id="col">+</td>
+        </tr>
+        <tr id="row1">
+            <td onclick="cal('00')" id="col1">00</td>
+            <td onclick="cal('0')" id="col1">0</td>
+            <td onclick="cal('.')" id="col1">.</td>
+            <td onclick="eq()" id="col">=</td>
+        </tr>
+    </table>
+    <h1 class="h">Online Calculator</h1> 
+    <script src="./calc.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+.a{
+    background-color: blue;
+}
+.table{
+    background-color: rgba(0, 0, 0, 0.69);
+    border-radius: 20px;
+}
+.display{
+    background-color: white;
+    border-radius: 10px;
+}
+#row1{
+    background-color: white;
+    border-radius: 20px;
+}
+#col{
+    background-color: orange;
+    border-radius: 10px;
+}
+#col1{
+    border-radius: 10px;
+}
+.h{
+    text-align: center;
+    background-color: aliceblue;
+}
+
+
