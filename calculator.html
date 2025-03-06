@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./calculator.css">
 </head>
 <body>
-    <table align="center" cellpadding="20px" cellspacing="20px" border="2px">
+    <table align="center" cellpadding="15px" cellspacing="15px" border="2px" class="table">
         <tr>
             <td colspan="4" id="show"></td>
         </tr>
@@ -37,9 +37,9 @@
         </tr>
         <tr>
             <td onclick="cal()">=</td>
-            <td>del</td>
-            <td>ac</td>
-            <td>square</td>
+            <td onclick="del()">del</td>
+            <td onclick="ac()">ac</td>
+            <td onclick="square()"> square</td>
         </tr>
     </table>
     <script src="./calculator.js"></script>

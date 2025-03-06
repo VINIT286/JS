@@ -1,0 +1,11 @@
+*{
+    background-color: aqua;
+}
+.table{
+    background-color: black;
+    border-radius: 10px;
+    
+}
+.table tr td{
+    border-radius: 10px;
+}
