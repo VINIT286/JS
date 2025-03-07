@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        input {
+            padding: 10px;
+            margin: 10px;
+            width: 80%;
+        }
+        button {
+            padding: 10px 20px;
+            background: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>BMI Calculator</h2>
+        <input type="number" id="weight" placeholder="Enter weight (kg)">
+        <input type="number" id="height" placeholder="Enter height (m)">
+        <button onclick="calculateBMI()">Calculate BMI</button>
+        <h3 id="result"></h3>
+    </div>
+
+    <script>
+        function calculateBMI() {
+            let weight = document.getElementById("weight").value;
+            let height = document.getElementById("height").value;
+            
+            if (weight > 0 && height > 0) {
+                let bmi = (weight / (height * height)).toFixed(2);
+                let category = "";
+                
+                if (bmi < 18.5) category = "Underweight";
+                else if (bmi >= 18.5 && bmi < 24.9) category = "Normal weight";
+                else if (bmi >= 25 && bmi < 29.9) category = "Overweight";
+                else category = "Obese";
+                
+                document.getElementById("result").innerText = `BMI: ${bmi} (${category})`;
+            } else {
+                document.getElementById("result").innerText = "Please enter valid inputs";
+            }
+        }
+    </script>
+</body>
+</html>

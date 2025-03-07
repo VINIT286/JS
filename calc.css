@@ -3,6 +3,7 @@
     font-size: large;
     font-weight:bolder;
     border-color: white;
+    display: flex;
 }
 .table{
     background-color: rgba(0, 0, 0, 0.69);
@@ -11,7 +12,10 @@
 .display{
     background-color: white;
     border-radius: 10px;
+    height: 30px;
+    font-size: xx-large;
 }
+
 #row1{
     background-color: white;
     border-radius: 20px;
