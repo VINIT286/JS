@@ -5,25 +5,39 @@ const bmi=()=>{
     let weight= document.querySelector('#weight').value
     let height = document.querySelector('#height').value
     let hinm =height/100;
-    let result = (weight/hinm*hinm)
+    let result = weight/(hinm*hinm)
+
+     alert(result)
 
     if(age>20){
     if(18.5<result && 25>result)
     {
-        document.querySelector('#output').innerHTML ="fit"
+       let output= document.querySelector('#output');
+       output.innerHTML ="<br><br>Fit"
+       output.style.backgroundColor="green";
+       output.style.transition="background-color 2s"
     }
     else if(18.5>result)
     {
-        document.querySelector('#output').innerHTML ="underweight"
+        let output= document.querySelector('#output');
+       output.innerHTML ="<br><br>Underweight"
+       output.style.backgroundColor="brown";
+       output.style.transition="background-color 2s"
     }
-    else if(25>result && result<30)
+    else if(25<result && result<30)
         {
-            document.querySelector('#output').innerHTML ="overweight"
+            let output= document.querySelector('#output');
+            output.innerHTML ="<br><br>Overweight"
+            output.style.backgroundColor="yellow";
+            output.style.transition="background-color 2s"
         }
 
-    else if(result>30)
+    else if(result<30)
         {
-           document.querySelector('#output').innerHTML ="obbesed"
+            let output= document.querySelector('#output');
+            output.innerHTML ="<br><br>Obbesed"
+            output.style.backgroundColor="red";
+            output.style.transition="background-color 2s"
         }
     }
 return false;
