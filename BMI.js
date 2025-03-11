@@ -32,7 +32,7 @@ const bmi=()=>{
             output.style.transition="background-color 2s"
         }
 
-    else if(result<30)
+    else if(result>=30)
         {
             let output= document.querySelector('#output');
             output.innerHTML ="<br><br>Obbesed"
