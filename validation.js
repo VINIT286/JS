@@ -24,9 +24,20 @@ const reg= ()=>{
         document.querySelector("#email").focus();
         return false; 
     }
-    else if (mobile =='')
+    else if(!(email.includes('.com'))||(email.includes('.in'))){
+        window.alert("Please enter proper  email address");
+        document.querySelector("#email").focus();
+        return false; 
+    }
+    else if(mobile == '')
     {
-        window.alert("Please enter your mobile number ");
+        window.alert("Please enter proper  mobile number");
+        document.querySelector("#mobile").focus();
+        return false; 
+    }
+    else if (mobile.length !=10)
+    {
+        window.alert("mobile number should be 10 digit");
         document.querySelector("#mobile").focus();
         return false;
     }
@@ -36,12 +47,21 @@ const reg= ()=>{
         document.querySelector("#pass").focus();
         return false;
     } 
-    else if (cpass =='')
+    else if(pass.length <8)
+    {
+        window.alert(" password should be of 8 character  ");
+        document.querySelector("#pass").focus();
+        return false;
+    } 
+    else if (pass!=cpass)
     {
         window.alert(" Confrim your password ");
-        document.querySelector("#cpass").focus();
+        document.querySelector("#pass").value ="";
+        document.querySelector("#cpass").value= "";
+        document.querySelector("#pass").focus();
         return false;
-    }   
+    }
+
 }
 
 
