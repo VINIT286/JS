@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./val.css">
 </head>
 <body>
-    <form action="" onsubmit="return reg()">
-        <input type="text" id="name" placeholder="Enter Name">
-        <input type="email" id="email" placeholder="Enter Email">
-        <input type="tel"   id="mobile"placeholder=" Enter Mobile no">
-        <input type="password"id="pass" placeholder="Enter your password">
-        <input type="password"  id="cpass" placeholder="Confirm your password">
-        <button> Submit </button>
+    <form  class="form" action="" onsubmit="return reg()" align="center">
+        <div><h1>Registration Form </h1></div>
+        <div><input type="text" id="name" placeholder="Enter Name"></div>
+        <div><input type="email" id="email" placeholder="Enter Email"></div>
+        <div><input type="tel"   id="mobile"placeholder=" Enter Mobile no"></div>
+        <div><input type="password"id="pass" placeholder="Enter your password"></div>
+        <div><input type="password"  id="cpass" placeholder="Confirm your password"></div>
+        <div><button> Submit </button></div>
     </form>
     <script src="./validation.js"></script>
 </body>
