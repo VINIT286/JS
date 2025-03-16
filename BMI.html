@@ -6,34 +6,19 @@
     <link rel="stylesheet" href="./BMI.css">
     <title>Document</title>
 </head>
-<style>
-    #output{
-        width:100px;
-        height: 100px;
-        border-radius: 50%;
-        border: 2px solid black;
-        text-align: center ;
-        padding: 20px;
-    }
-   
-</style>
 <body>
-    <div id="output"></div>
-    <form onsubmit="return bmi()">
-        Select Gender
-       <select name="" id="gender">
+    <form onsubmit="return bmi()" class="form" align="center">
+        <div><h1>BMI CALCULATOR</h1></div>
+        <div> <select name="" id="gender">
         <option value="male"> Male </option>
         <option value="female "> Female</option>
         <option value="other">Other</option>
-       </select>
-       <br>
-       <input type="text" id="age" placeholder="Enter age">
-       <br>
-       <input type="text" id="height" placeholder="Enter height in cm ">
-       <br>
-       <input type="text" id="weight" placeholder="Enter weight in kg">
-       <br>
-       <button>Submit</button>
+       </select> </div>
+       <div><input type="text" id="age" placeholder="Enter age"></div>
+       <div><input type="text" id="height" placeholder="Enter height in cm "></div>
+       <div><input type="text" id="weight" placeholder="Enter weight in kg"></div>
+       <div><button>Submit</button></div>
+       <div id="output"></div>
     </form>
     <script src="./BMI.js"></script>
 </body>
