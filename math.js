@@ -5,6 +5,9 @@
 //  console.log(Math.sqrt(4))
 //  console.log(Math.floor(3.44))
 // console.log(Math.ceil(3.44))
+
+
+
 let str = '1234567890'
 let store = ''
 const run = () => {
