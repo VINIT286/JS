@@ -13,5 +13,6 @@ let tl=`<div>
 let df=document.querySelector('#df')
 df.innerHTML=tl
 console.log(nm,em,num,im)
+//print()
 return false;
 }
