@@ -3,3 +3,4 @@ let b=a.filter(e=>e<10)
 console.log(b)
 let aa=document.querySelector('#aa')
 aa.innerHTML=b
+
