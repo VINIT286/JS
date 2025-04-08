@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body onload="return a()">
     <form onsubmit="return s()">
         <select name="" id="op">
             <option value="pn">search by product name</option>
@@ -15,6 +15,8 @@
         <input type="text" placeholder="Search" id="search">
         <button>search</button>
     </form>
+
+    <div id="object"></div>
     <script src="./filter2.js"></script>
 </body>
 </html>
