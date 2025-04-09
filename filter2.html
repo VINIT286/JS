@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./filter2.css">    
 </head>
+
 <body onload="return a()">
     <form onsubmit="return s()">
         <select name="" id="op">
             <option value="pn">search by product name</option>
             <option value="pb">search by product brand</option>
-            <option value="pp">search by product price</option>
+            <option value="pp">search by product price</option>l
         </select>
-        <input type="text" placeholder="Search" id="search">
-        <button>search</button>
+        <input type="text" placeholder="Search Amazon.in" id="search">
+        <button id="b"><i class="fa-solid fa-magnifying-glass"></i></button>
     </form>
-
-    <div id="object"></div>
+    <div id="object" style="display: grid;grid-template-columns: auto auto auto auto;"></div>
     <script src="./filter2.js"></script>
 </body>
+
 </html>
